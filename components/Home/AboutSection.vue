@@ -28,8 +28,8 @@ import SofaImg from "assets/images/sofa-img.png";
         'background-repeat': 'no-repeat'
       }"
         >
-          <div class="flex items-center justify-between h-full w-full absolute z-10 my-auto mx-auto 2xl:left-[-500px] lg:left-[-300px] left-0 xl:top-0 top-[-500px]">
-            <div class="2xl:w-[608px] 2xl:h-[543px] md:w-[308px] md:h-[243px] w-[335px] h-[276px]">
+          <div class="flex items-center justify-between h-full w-full absolute z-10 my-auto mx-auto 2xl:left-[-500px] lg:left-[-300px] left-0 xl:top-0 lg:top-[-100px] top-[-500px]">
+            <div class="2xl:w-[608px] 2xl:h-[543px] md:w-[308px] md:h-[243px] w-[335px] h-[276px] mx-auto">
             <img src="@/assets/images/sofa-img.png"  />
             </div>
           </div>

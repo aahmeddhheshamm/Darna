@@ -1,41 +1,52 @@
 <script setup>
-import FooterBg from "assets/images/footer-background.png";
-
+import {useLocalePath} from '#i18n'
+const localePath = useLocalePath()
 </script>
 
 <template>
-  <div class="md:mx-[120px]">
-    <div
-        class="cover-store-profile h-[580px] relative rounded-t-[40px]"
-        :style="{
-        'background-image': 'url(' + FooterBg + ')',
-        'background-size': 'cover',
-        'background-position': 'center',
-        'background-repeat': 'no-repeat'
-      }"
-    >
-      <div class="flex items-center justify-between h-full relative z-10 ps-[55px] my-auto">
-        <div class="flex flex-col gap-[24px]">
-          <p class="md:text-[64px] text-[24px] font-bold leading-[62px] text-white max-w-[613px]">
-            Download Mails App
-          </p>
-          <p class="md:text-[24px] text-[14px] font-medium leading-[25px] text-white max-w-[766px]">
-            Potter ipsum wand elf parchment wingardium. Nagini quaffle candles hand tears downfall. Fluffy snitch cottage for that sight and. Garg
-          </p>
-          <p class="md:text-[24px] text-[14px] font-medium leading-[25px] text-white max-w-[766px]">
-            Potter ipsum wand elf parchment wingardium. Nagini quaffle candles hand tears downfall. Fluffy snitch cottage for that sight and. Garg
-          </p>
-          <p class="md:text-[24px] text-[14px] font-medium leading-[25px] text-white max-w-[766px]">
-            Potter ipsum wand elf parchment wingardium. Nagini quaffle candles hand tears downfall. Fluffy snitch cottage for that sight and. Garg
-          </p>
-        </div>
+  <div class="bg-black text-white md:px-[90px] px-[45px] md:mb-[150px] mb-[64px] flex flex-col gap-[15px] md:pt-[53px] pt-[26px]  flex-wrap">
 
-        <div class="lg:absolute top-[-100px] right-0">
-          <img src="@/assets/images/mobile-footer.png" class="" />
-        </div>
+    <nuxt-link :to="localePath('/')" class="text-[#FF6100] font-bold md:text-[64px] text-[58px]">Darna</nuxt-link>
+      <p class="text-white md:text-[16px] text-[12px] font-medium w-[324px]">
+        Search over 1 million listings including apartments, houses, condos, and townhomes available for rent. You’ll find your next home, in any style you prefer.
+      </p>
+    <nuxt-link :to="localePath('/privacyPolicy')" class="text-[#FF6100] font-semibold md:text-[28px] text-[22px]">Privacy and Policy:</nuxt-link>
+      <div class="flex items-center gap-[12px] my-[25px] cursor-pointer">
+        <nuxt-link  target="_blank">
+          <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.95166 9L8.3516 6.10437H5.851V4.22531C5.851 3.43313 6.20032 2.66094 7.32025 2.66094H8.45707V0.195625C8.45707 0.195625 7.42544 0 6.4391 0C4.37979 0 3.03372 1.38688 3.03372 3.8975V6.10437H0.744629V9H3.03372V16H5.851V9H7.95166Z" fill="white"/>
+          </svg>
+        </nuxt-link>
+        <nuxt-link target="_blank">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.92575 16H0.60853V5.31762H3.92575V16ZM2.26535 3.86044C1.20461 3.86044 0.344238 2.98185 0.344238 1.92111C0.344238 1.4116 0.546641 0.92296 0.90692 0.562681C1.2672 0.202403 1.75584 0 2.26535 0C2.77486 0 3.26351 0.202403 3.62379 0.562681C3.98406 0.92296 4.18647 1.4116 4.18647 1.92111C4.18647 2.98185 3.32573 3.86044 2.26535 3.86044ZM16.341 16H13.0309V10.7999C13.0309 9.56057 13.0059 7.97125 11.3063 7.97125C9.58159 7.97125 9.3173 9.31771 9.3173 10.7106V16H6.00365V5.31762H9.18515V6.77479H9.23158C9.67445 5.93549 10.7563 5.04976 12.3702 5.04976C15.7274 5.04976 16.3446 7.26052 16.3446 10.132V16H16.341Z" fill="white"/>
+          </svg>
+        </nuxt-link>
+        <nuxt-link target="_blank">
+          <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6996 3.23858C14.7098 3.3807 14.7098 3.52286 14.7098 3.66498C14.7098 8 11.4103 12.995 5.37979 12.995C3.52191 12.995 1.79603 12.4569 0.344238 11.5229C0.608208 11.5533 0.86199 11.5635 1.13612 11.5635C2.66909 11.5635 4.08028 11.0457 5.20719 10.1625C3.76556 10.132 2.55743 9.18785 2.14118 7.88834C2.34425 7.91878 2.54728 7.93909 2.7605 7.93909C3.05491 7.93909 3.34934 7.89847 3.62344 7.82744C2.1209 7.52284 0.99396 6.20306 0.99396 4.60914V4.56855C1.43049 4.81221 1.93815 4.96449 2.47618 4.98477C1.59293 4.39592 1.01427 3.39086 1.01427 2.25379C1.01427 1.64466 1.17668 1.08629 1.46096 0.598971C3.07519 2.58882 5.5016 3.8883 8.22239 4.03045C8.17164 3.7868 8.14118 3.53301 8.14118 3.2792C8.14118 1.47207 9.60312 0 11.4204 0C12.3645 0 13.2173 0.395939 13.8163 1.03554C14.5574 0.89341 15.2681 0.619284 15.8975 0.243657C15.6539 1.0051 15.1361 1.64469 14.4559 2.05076C15.1158 1.97973 15.7554 1.79694 16.3442 1.54316C15.8976 2.19288 15.3392 2.77154 14.6996 3.23858Z" fill="white"/>
+          </svg>
+        </nuxt-link>
+        <nuxt-link target="_blank" >
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.34236 4.66567C6.05701 4.66567 5.00807 5.71463 5.00807 7C5.00807 8.28537 6.05701 9.33433 7.34236 9.33433C8.6277 9.33433 9.67664 8.28537 9.67664 7C9.67664 5.71463 8.6277 4.66567 7.34236 4.66567ZM14.3435 7C14.3435 6.03335 14.3522 5.07545 14.2979 4.11055C14.2436 2.98979 13.988 1.99512 13.1684 1.17556C12.3471 0.35426 11.3542 0.100338 10.2335 0.0460516C9.26687 -0.00823506 8.30899 0.000520879 7.34411 0.000520879C6.37747 0.000520879 5.41959 -0.00823506 4.45471 0.0460516C3.33397 0.100338 2.33932 0.356011 1.51978 1.17556C0.698492 1.99687 0.444575 2.98979 0.390289 4.11055C0.336003 5.0772 0.344759 6.0351 0.344759 7C0.344759 7.9649 0.336003 8.92455 0.390289 9.88945C0.444575 11.0102 0.700243 12.0049 1.51978 12.8244C2.34107 13.6457 3.33397 13.8997 4.45471 13.9539C5.42134 14.0082 6.37922 13.9995 7.34411 13.9995C8.31074 13.9995 9.26862 14.0082 10.2335 13.9539C11.3542 13.8997 12.3489 13.644 13.1684 12.8244C13.9897 12.0031 14.2436 11.0102 14.2979 9.88945C14.354 8.92455 14.3435 7.96665 14.3435 7ZM7.34236 10.5917C5.3548 10.5917 3.75075 8.98759 3.75075 7C3.75075 5.01241 5.3548 3.40832 7.34236 3.40832C9.32991 3.40832 10.934 5.01241 10.934 7C10.934 8.98759 9.32991 10.5917 7.34236 10.5917ZM11.0811 4.10004C10.617 4.10004 10.2423 3.72529 10.2423 3.26122C10.2423 2.79716 10.617 2.42241 11.0811 2.42241C11.5451 2.42241 11.9199 2.79716 11.9199 3.26122C11.92 3.37142 11.8984 3.48056 11.8563 3.58239C11.8142 3.68422 11.7524 3.77675 11.6745 3.85467C11.5966 3.93258 11.5041 3.99437 11.4022 4.03647C11.3004 4.07858 11.1913 4.10018 11.0811 4.10004Z" fill="white"/>
+          </svg>
+        </nuxt-link>
+        <nuxt-link target="_blank" >
+          <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.0099 1.76024C15.8259 1.06737 15.2837 0.521689 14.5953 0.336504C13.3476 0 8.34424 0 8.34424 0C8.34424 0 3.34092 0 2.09314 0.336504C1.40475 0.521718 0.862587 1.06737 0.678574 1.76024C0.344238 3.01611 0.344238 5.63636 0.344238 5.63636C0.344238 5.63636 0.344238 8.25661 0.678574 9.51248C0.862587 10.2053 1.40475 10.7283 2.09314 10.9135C3.34092 11.25 8.34424 11.25 8.34424 11.25C8.34424 11.25 13.3476 11.25 14.5953 10.9135C15.2837 10.7283 15.8259 10.2053 16.0099 9.51248C16.3442 8.25661 16.3442 5.63636 16.3442 5.63636C16.3442 5.63636 16.3442 3.01611 16.0099 1.76024ZM6.70786 8.01535V3.25737L10.8897 5.63642L6.70786 8.01535Z" fill="white"/>
+          </svg>
+        </nuxt-link>
       </div>
-
-    </div>
+      <p class="text-primary-200 font-bold md:text-[28px] text-[22px]">Contact Info:</p>
+      <div class="flex items-center gap-[12px] text-primary-200 font-semibold md:text-[24px] text-[18px]">
+        <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.75 0H0.75C0.551088 0 0.360322 0.0790178 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75V13.5C0 13.8978 0.158035 14.2794 0.43934 14.5607C0.720644 14.842 1.10218 15 1.5 15H18C18.3978 15 18.7794 14.842 19.0607 14.5607C19.342 14.2794 19.5 13.8978 19.5 13.5V0.75C19.5 0.551088 19.421 0.360322 19.2803 0.21967C19.1397 0.0790178 18.9489 0 18.75 0ZM18 13.5H1.5V2.45531L9.24281 9.55312C9.38118 9.68014 9.56217 9.75062 9.75 9.75062C9.93783 9.75062 10.1188 9.68014 10.2572 9.55312L18 2.45531V13.5Z" fill="white"/>
+        </svg>
+  
+        <p class="text-primary-200 md:text-[24px] text-[12px] font-medium">amgadHesham@gmail.com</p>
+      </div>
+    
 
   </div>
 </template>

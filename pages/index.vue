@@ -9,6 +9,7 @@
 
   <LazyHomeWorkSection />
 
+  <LazyHomeAppDownload />
 </template>
 
 <style>

@@ -42,9 +42,9 @@ module.exports = {
     },
     extend: {
       colors,
-      fontFamily: {
-        Alexandria: ["Alexandria"],
-      },
+      // fontFamily: {
+      //   Alexandria: ["Alexandria"],
+      // },
       boxShadow: {
         main: "0px 1px 3px 0px rgba(23, 102, 68, 0.03), 0px 10px 46px 0px rgba(23, 100, 67, 0.03)",
       },

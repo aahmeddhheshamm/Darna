@@ -2,6 +2,7 @@
 // @ts-ignore
 export default defineNuxtConfig({
   // devtools: { enabled: true },
+  ssr: false,
   app: {
     head: {
       title: "Darna",

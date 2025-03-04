@@ -6,27 +6,8 @@
   <div class="container mt-8">
     <h1 class="text-[#FF6100] font-bold md:text-[64px] text-[58px]"> Darna Privacy Policy</h1>
 
-    <p class="text-white md:text-[16px] text-[12px] font-medium">
-
       <h3 class="text-primary-200 font-bold md:text-[28px] text-[22px] py-4">Privacy Policy Effective Date: 1/4/2025</h3>
       <ul class="text-white md:text-[16px] text-[12px] font-medium flex flex-col gap-[12px]">
-        <p class="text-white md:text-[16px] text-[12px] font-medium"> 1. Introduction Welcome to Darna! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our real estate app to browse properties, list properties for sale or rent, and participate in auctions.</p>
-        <p class="text-white md:text-[16px] text-[12px] font-medium"> 2. Information We Collect When using the Darna app, we may collect the following types of information:</p>
-        <li class="text-white md:text-[16px] text-[12px] font-medium">
-          * Personal Information: Name, email address, phone number, and profile details when you sign up.
-        </li>
-        <li class="text-white md:text-[16px] text-[12px] font-medium">
-          * Property Listings: Details of properties you list, including descriptions, images, and pricing.
-        </li>
-        <li>
-          * Location Data: Optional location information to improve search results and recommendations.
-        </li>
-        <li class="text-white md:text-[16px] text-[12px] font-medium">
-          * Usage Data: Information on how you interact with the app, such as property views, saved searches, and auction participation.
-        </li>
-        <li>
-          * Payment Information: If you participate in paid services, we collect necessary payment details securely.
-        </li>
 
         <p class="text-white md:text-[16px] text-[12px] font-semibold">
           1. Introduction Welcome to Darna! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our real estate app to browse properties, list properties for sale or rent, and participate in auctions.
@@ -107,10 +88,9 @@
         </p>
         <p class="text-white md:text-[16px] text-[12px] font-semibold">
 
-          8. Contact Us If you have any questions about this Privacy Policy, please contact us at <span class="font-bold text-[#FF6100]">amgad_hesham@outlook.com.</span>
+          8. Contact Us If you have any questions about this Privacy Policy, please contact us at <span class="font-bold text-[#FF6100]">amgad_hesham@outlook.com</span>
         </p>
       </ul>
-</p>
   </div>
 </template>
 
